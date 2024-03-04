@@ -3,8 +3,18 @@ Arquitetura de camadas:
 Para esse sistema eu preciso de um custo mais baixo, sem me preocupar com escalabilidade afinal a regra de negócio é inauteravel, também não será preciso de recursos mais complexicos como autenticação de usuário, apenas CRUDs
 
 Pipeline:
-  - Sistema que gerencia uma agenda de um consulttório
+  - Sistema que gerencia uma agenda de um consultório
 Para esse sistema eu preciso de confiabilidade nas transações, porém nao há nescessidade de se preocupar com infraestrutura ou com grande volume de dados
 
-Micro-kernel
-  - 
+Micro-kernel:
+  - Sistema de estoque.
+Sistema que possui um grande nucleo de operações comuns e com pouca demanda de alteração, sistema com baixo custo e dificilmente vai escalar
+
+Served-base:
+   - 
+
+Micro-serviços:
+  - Sistemas de gerenciamento mais complexos, com constantes customizações e melhorias.
+Para sistemas desse tipo há uma demanda constante por escalabilidade, na mesma medida que há também disponibilidade grande de recursos de infraestrutura, equipe e financeiros.
+
+
